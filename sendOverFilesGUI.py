@@ -37,8 +37,8 @@ class GUI():
         self.sendButton = Button(
             self.root,
             text = "Send",
-            command = lambda: self.sendMessage()
-            #background = "green"
+            command = lambda: self.sendMessage(),
+            background = "orange2"
         )
         self.showChat.grid(
             row = 1,

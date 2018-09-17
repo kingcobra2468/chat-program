@@ -5,11 +5,12 @@ class transmission:
     __sftpObject = None #list obj
     __sftpObj = None
     __data = {
-        'username' : ' ',
-        'ip' : 'xxx.xx.xxx.xxx'
-        'userServer' : 'USERNAME',
-        'password' :  'PASSWORD'
+        'username' : '.',
+        'ip' : '.',
+        'userServer' : '.',
+        'password' :  '.'
     }
+    
     __lastLine= str()
     def __init__(self):
         self.attemptConnection()
@@ -61,7 +62,7 @@ class transmission:
             print("Failed")
     
 #try:
-#    attempt = paramiko.Transport(('ip', 22))
+#    attempt = paramiko.Transport(('10.0.1.14', 22))
 #    attempt.connect(username='x', password='x')
 #    f=paramiko.SFTPClient.from_transport(attempt)
 #    f.put('/home/erik/Documents/Programming/Python/plottingData.py', '/home/erik/t')
